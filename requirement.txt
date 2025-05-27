@@ -1,0 +1,14 @@
+langchain
+openai
+pandas
+PyYAML
+pdfplumber
+tqdm
+python-dotenv
+langchain-openai
+scikit-learn
+nbformat
+tabulate
+matplotlib
+seaborn
+scipy

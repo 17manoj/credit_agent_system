@@ -1,0 +1,33 @@
+step_1:
+  step_name: "Data Exploration"
+  human_guidance: |
+    Please explore the dataset by performing the following operations:
+
+    1. Load the dataset and display the first 5 rows.
+    2. Provide a summary of the dataset including:
+        - Number of rows and columns
+        - Data types of each column
+        - Basic statistics (mean, median, mode, standard deviation) for numerical columns
+        - Frequency counts for categorical columns
+    3. Identify and list any missing values in the dataset.
+    4. Visualize the distribution of numerical features using histograms.
+    5. Create bar plots for categorical features to show their distributions.
+    6. Identify any potential outliers in numerical columns using box plots.
+    7. Provide insights on correlations between numerical features using a correlation matrix.
+
+
+step_2:
+  step_name: "Data Cleaning"
+  human_guidance: |
+    Please clean the dataset by performing the following operations:
+
+    1. Remove any duplicate rows if they exist.
+    2. Handle missing values:
+        - For numerical columns, fill missing values with the column mean.
+        - For categorical columns, fill missing values with the most frequent category.
+    3. Standardize column names: convert them to lowercase and replace spaces with underscores.
+    4. Drop any columns that have more than 80% missing values.
+    5. Ensure all date columns are converted to proper datetime format.
+    6. For Numerical columns, replace any outliers in numerical columns using the interquartile range (IQR) method.
+    7. Using onehot encoding, convert categorical variables into numerical format. After than remove all categorical variables columns.
+    8. Undertake any data cleaning steps that you deem necessary to ensure the dataset is ready for analysis and machine learning algorithm.
