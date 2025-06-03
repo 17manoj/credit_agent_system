@@ -14,6 +14,7 @@ step_1:
     5. Create bar plots for categorical features to show their distributions.
     6. Identify any potential outliers in numerical columns using box plots.
     7. Provide insights on correlations between numerical features using a correlation matrix.
+    8. make sure this error doesnt occur:"'OneHotEncoder' object has no attribute 'get_feature_names'"
 
 
 step_2:

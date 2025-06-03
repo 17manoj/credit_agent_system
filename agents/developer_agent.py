@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 import nbformat
 from nbformat.v4 import new_notebook, new_markdown_cell, new_code_cell
 import ast
-
-load_dotenv()
+load_dotenv(".env",override=True)
+api_key = os.getenv("OPENAI_API_KEY")
 
 class DeveloperAgent:
     def __init__(self, data_path, guidance_path, llm_model="gpt-4"): 
@@ -85,7 +85,7 @@ class DeveloperAgent:
             exec_env = {'df': self.data}
             exec(self.generated_code, exec_env)
             self.data = exec_env['df']
-            self.data.to_csv("data/cleaned_credit_data.csv", index=False)
+            self.data.to_csv("data/generated_data/cleaned_credit_data.csv", index=False)
             print("✅ Code executed , data cleaned and saved successfully.")
         except Exception as e:
             print(f"❌ Error during execution: {e}")

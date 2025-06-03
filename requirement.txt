@@ -12,3 +12,6 @@ tabulate
 matplotlib
 seaborn
 scipy
+streamlit
+nbclient
+nbconvert
